@@ -1,11 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import Navigation from '../components/Navigation';
+import Home from '../components/sections/Home';
+import Products from '../components/sections/Products';
+import Contact from '../components/sections/Contact';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-[#F2FCE2] text-gray-800">
+      <Navigation />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="products">
+        <Products />
+      </div>
+      <div id="contact">
+        <Contact />
       </div>
     </div>
   );
