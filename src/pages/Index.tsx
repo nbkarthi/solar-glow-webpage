@@ -7,7 +7,7 @@ import Contact from '../components/sections/Contact';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#F2FCE2] text-gray-800">
+    <div className="min-h-screen bg-white text-gray-800">
       <Navigation />
       <div id="home">
         <Home />
