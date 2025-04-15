@@ -4,7 +4,9 @@ import React from 'react';
 const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
-    section?.scrollIntoView({ behavior: 'smooth' });
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (

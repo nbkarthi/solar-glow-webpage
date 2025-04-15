@@ -9,15 +9,20 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       <Navigation />
-      <div id="home">
-        <Home />
-      </div>
-      <div id="products">
-        <Products />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
+      <main>
+        <section id="home" className="scroll-mt-16">
+          <Home />
+        </section>
+        <section id="products" className="scroll-mt-16">
+          <Products />
+        </section>
+        <section id="contact" className="scroll-mt-16">
+          <Contact />
+        </section>
+      </main>
+      <footer className="py-6 text-center text-sm text-gray-600 bg-[#F7FAF0]">
+        <p>© {new Date().getFullYear()} GreenRise Energy Solutions. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
